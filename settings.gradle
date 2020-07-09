@@ -1,0 +1,2 @@
+rootProject.name='JBM_COVID_ProtectionApp'
+include ':app'

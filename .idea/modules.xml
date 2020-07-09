@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JBM_COVID_ProtectionApp.iml" filepath="$PROJECT_DIR$/JBM_COVID_ProtectionApp.iml" group="JBM_COVID_ProtectionApp" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="JBM_COVID_ProtectionApp/app" />
+    </modules>
+  </component>
+</project>

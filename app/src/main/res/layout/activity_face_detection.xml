@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    tools:context=".faceDetection.faceDetection">
+    <com.wonderkiln.camerakit.CameraView
+        android:id="@+id/cameraView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/detectFace">
+
+
+    </com.wonderkiln.camerakit.CameraView>
+
+    <com.sanjana.jbm_covid_protectionapp.faceDetection.GraphicOverlay
+        android:id="@+id/graphicOverlay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/detectFace" />
+
+    <Button
+        android:id="@+id/detectFace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="Detect Face"
+        android:textColor="@android:color/white" />
+
+    <ProgressBar
+        android:id="@+id/progressBar4"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/flashButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/flashButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/cameraRotate"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp"
+        app:srcCompat="@android:drawable/ic_menu_compass" />
+
+    <ImageButton
+        android:id="@+id/cameraRotate"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/cameraView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@android:drawable/stat_notify_sync_noanim" />
+
+</RelativeLayout>

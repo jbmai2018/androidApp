@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sanjana.jbm_covid_protectionapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_logo_foreground"
+        android:label="ThirdEye AI"
+        android:roundIcon="@mipmap/ic_launcher_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity android:name=".homeScreen.ui.gallery.ImageOnFullScreen.FullScreenImageActivity"
+            android:parentActivityName=".homeScreen.homeScreenActivity"
+            android:label="FullScreenImageActivity"/>
+        <activity
+            android:name=".homeScreen.homeScreenActivity"
+            android:label="@string/title_activity_home_screen"
+            android:noHistory="true"
+            android:parentActivityName=".homeScreen.homeScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".notification.NotificationManger" />
+        <activity android:name=".faceDetection.faceDetection"
+            android:parentActivityName=".homeScreen.homeScreenActivity"
+            tools:ignore="DuplicateActivity" />
+        <activity android:name=".faceDetection.faceDetectionL"
+            android:parentActivityName=".homeScreen.homeScreenActivity"
+            tools:ignore="DuplicateActivity" />
+        <activity android:name=".faceDetection.faceDetectionR"
+            android:parentActivityName=".homeScreen.homeScreenActivity"
+            tools:ignore="DuplicateActivity" />
+        <activity android:name=".faceDetection.faceDetectionVerification"
+            android:parentActivityName=".homeScreen.homeScreenActivity"
+            tools:ignore="DuplicateActivity" />
+        <activity android:name=".homeScreen.ui.home.LocationManage"
+            android:parentActivityName=".homeScreen.homeScreenActivity"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".loginSignUp.signUp"
+            android:noHistory="true"
+            android:parentActivityName=".loginSignUp.loginActivity" />
+        <activity
+            android:name=".loginSignUp.loginActivity"
+            android:noHistory="true"
+            android:parentActivityName=".loginSignUp.loginActivity" />
+        <activity android:name=".MainActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+                android:value="face"
+                android:noHistory="true"/>
+        </activity>
+        <activity android:name=".homeScreen.ui.home.DisplayClass" />
+
+        <service
+            android:name=".notification.MessagingService"
+            android:permission="TODO">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

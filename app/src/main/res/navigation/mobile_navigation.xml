@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.sanjana.jbm_covid_protectionapp.homeScreen.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_verify"
+        android:name="com.sanjana.jbm_covid_protectionapp.homeScreen.ui.home.FaceVerificationFragment"
+        android:label="Face Verification"
+        tools:layout="@layout/face_verification_fragment" />
+    <fragment
+        android:id="@+id/nav_location"
+        android:name="com.sanjana.jbm_covid_protectionapp.homeScreen.ui.home.LocationFragment"
+        android:label="Location Manager"
+        tools:layout="@layout/location_manager_fragment"/>
+    <fragment
+        android:id="@+id/nav_face"
+        android:name="com.sanjana.jbm_covid_protectionapp.faceDetection.SlideshowFragment"
+        android:label="Face Registration"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.sanjana.jbm_covid_protectionapp.homeScreen.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+
+
+</navigation>

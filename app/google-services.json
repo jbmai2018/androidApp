@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "950280936628",
+    "firebase_url": "https://jbm-covid-protectionapp.firebaseio.com",
+    "project_id": "jbm-covid-protectionapp",
+    "storage_bucket": "jbm-covid-protectionapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950280936628:android:7a1e0e76a23c47140e8be1",
+        "android_client_info": {
+          "package_name": "com.sanjana.jbm_covid_protectionapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950280936628-judkog4hke7eibakdidb739m0566baih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdXmohtlRVj8URDFJCYDkvoJEuWJPMiuE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "950280936628-judkog4hke7eibakdidb739m0566baih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
